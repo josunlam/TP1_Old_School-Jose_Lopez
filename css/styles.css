@@ -1,0 +1,85 @@
+*{ /*Esto es para sacar todo tipo de margin y padding que pueda haber*/
+    margin: 0;
+    padding: 0;;
+}
+
+.header{
+    min-height:56px;
+    background-color: black;
+    padding: 8px 16px;
+    color: white;
+}
+
+.header .navbar .navbar__menu{
+    list-style: none; /*Esto es para sacar las viñetas el <ul>*/
+    height:240px; /*Es el alto del navbar__menu*/
+    
+    display: flex; /*Se utiliza casi siempre*/
+    /*flex-direction: column; /*Toma como eje principal el eje (Y)*/
+
+    /*---------------------------------------------------------
+    -----Flexbox Froggy -> Es una página para practicar Flexbox
+    https://flexboxfroggy.com/#es------------------------------
+    ---------------------------------------------------------*/
+
+    /*Trabaja sobre el eje (X)*/
+    /**/justify-content: center;/**/
+    /*justify-content: flex-end;/*Lo deja alineado a la derecha*/
+    /*justify-content: space-between; /*Alinea en el centro con espaciado de bloques*/
+    /*justify-content: space-around; /*Alinea en el centro con espaciado de bloques, dejando espacio en izquierda y derecha*/
+
+    /*(1)
+    flex-wrap: wrap; /*Cuando se tienen varios items y no hay espacio lo manda abajo, ACTIVAR(1)
+    /**/
+
+    /* Trabaja sobre el eje (Y)*/
+    /**/align-items: center; /*Los centra verticalmente*/
+    /*align-items: stretch; /*Elementos hijos ocupan todo el alto del elemento contenedor*/
+    /*align-items: flex-start; /*Lo alinea con un alineado vertical superior*/
+    /*align-items: baseline; /*Los centra verticalmente tomando como base la altura del texto*/
+    background-color: red;
+
+    gap:40px; /*Pone un espacio de 20px entre bloques, otra opcion sería en el hijo(menu-item) poner margin:0px 20px*/
+    text-transform: uppercase; /*Letras en Mayuscula*/
+    font-weight: 300;
+    font-size:14px; /*Tamaño de fuente*/
+    letter-spacing: 5; /*espacio entre letras*/
+}
+
+.header .navbar .navbar__menu .navbar__menu-item{
+    background-color: blue;
+/*(1)*/
+    width: 300px; /*Esto sirve para poder ver lo de Wrap,ACTIVAR(1)*/
+    border:2px solid black; /*Esto es para que se vea el espacio de bordes,ACTIVAR(1)*/
+/**/
+}
+
+.header .navbar .navbar__menu .navbar__menu-item:hover{
+    background-color: orange; /*Color al pasar con el mouse del Item*/
+}
+
+.header .navbar .navbar__menu .navbar__menu-item .navbar__menu-item-link{
+    color: white;  /*Color de la letra*/
+    text-decoration: none; /*Esto saca el subrayado*/
+    padding: 5px;
+    display: block; /*Hay que pasarlo a bloque para que entienda que lo que no es letra tambien es parte del boton*/
+}
+
+
+/**
+.header .navbar .navbar__menu .navbar__menu-item.item1{
+    order: 5;
+}
+.header .navbar .navbar__menu .navbar__menu-item.item2{
+    order: 4;
+}
+.header .navbar .navbar__menu .navbar__menu-item.item3{
+    order: 3;
+}
+.header .navbar .navbar__menu .navbar__menu-item.item4{
+    order: 2;
+}
+.header .navbar .navbar__menu .navbar__menu-item.item5{
+    order: 1;
+}
+**/

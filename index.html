@@ -5,24 +5,117 @@
     <title>title</title>
     <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width", initial-scale="1.0"></meta>
+
+    <!-- JS Propio-->
+    <script src="script_resolucion.js"></script>
 </head>
 <body>
     <header class="header">
         <nav class="navbar">
+            <p>Resolucion: <span id="resolucion"></span></p>
             <ul class="navbar__menu">
-                <li class="navbar__menu-item item1"><a class="navbar__menu-item-link" href="#">Peliculas</a></li>
-                <li class="navbar__menu-item item2"><a class="navbar__menu-item-link" href="#">Series de TV</a></li>
-                <li class="navbar__menu-item item3"><a class="navbar__menu-item-link" href="#">Niños y familia</a></li>
-                <li class="navbar__menu-item item4"><a class="navbar__menu-item-link" href="#">Marcas</a></li>
-                <li class="navbar__menu-item item5"><a class="navbar__menu-item-link" href="#">Episodios</a></li>
+                <li class="navbar__menu-item item1"><a class="navbar__menu-item-link" href="#">logo</a></li>
+                <li class="navbar__menu-item item2"><a class="navbar__menu-item-link" href="#">buscador</a></li>
+                <li class="navbar__menu-item item3"><a class="navbar__menu-item-link" href="#">carrito</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-
+    <main class="main">
+        <article class="Art1">
+            <section class="Art1__section">
+                <div class="img_1" style="background-color: aqua">
+                    <img src="imagenes/img_1.jpg" class="img__contenido" >
+                </div>
+            </section>
+        </article>
+        <article class="Art2">
+            <ul class="Art2__menu">
+                <li class="Art2__menu-item item1"><a class="Art2__menu-item-link" href="#">paso1</a></li>
+                <li class="Art2__menu-item item2"><a class="Art2__menu-item-link" href="#">paso2</a></li>
+                <li class="Art2__menu-item item3"><a class="Art2__menu-item-link" href="#">paso3</a></li>
+            </ul>
+        </article>
+        <article class="Art3">
+            <section style="text-transform: uppercase;">
+                <p style="padding-bottom: 20px;color: white;">
+                    cursos destacados
+                </p>
+            </section>
+            <section class="Art3__section">
+                <ul class="Art3__menu">
+                    <li class="Art3__menu-item item1">
+                        <a class="Art3__menu-item-link" href="#">
+                            gift1
+                            <!-- <img src="imagenes/gift.jpg" alt="pic1"> -->
+                        </a></li>
+                    <li class="Art3__menu-item item2">
+                        <a class="Art3__menu-item-link" href="#">
+                            gift2
+                            <!-- <img src="imagenes/gift.jpg" alt="pic2"> -->
+                        </a>
+                    </li>
+                    <li class="Art3__menu-item item3">
+                        <a class="Art3__menu-item-link" href="#">
+                            gift3
+                            <!-- <img src="imagenes/gift.jpg" alt="pic3"> -->
+                        </a>
+                    </li>
+                    <li class="Art3__menu-item item4">
+                        <a class="Art3__menu-item-link" href="#">
+                            gift4
+                            <!-- <img src="imagenes/gift.jpg" alt="pic4"> -->
+                        </a>
+                    </li>
+                    <li class="Art3__menu-item item5">
+                        <a class="Art3__menu-item-link" href="#">
+                            gift5
+                            <!-- <img src="imagenes/gift.jpg" alt="pic5"> -->
+                        </a>
+                    </li>
+                    <li class="Art3__menu-item item6">
+                        <a class="Art3__menu-item-link" href="#">
+                            gift6
+                            <!-- <img src="imagenes/gift.jpg" alt="pic6"> -->
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </article>
+        </article>
+        <article class="Art4">
+            <section class="Art4__section">
+                <ul class="Art4__menu">
+                    <li class="Art4__menu-item item1">
+                        <a class="Art4__menu-item-link" href="#">
+                            <img src="imagenes/tarj_1.jpg" alt="pic1">
+                        </a>
+                    </li>
+                    <li class="Art4__menu-item item2">
+                        <a class="Art4__menu-item-link" href="#">
+                            <img src="imagenes/tarj_2.jpg" alt="pic2">
+                        </a>
+                    </li>
+                    <li class="Art4__menu-item item3">
+                        <a class="Art4__menu-item-link" href="#">
+                            <img src="imagenes/tarj_3.jpg" alt="pic3">
+                        </a>
+                    </li>
+                    <li class="Art4__menu-item item4">
+                        <a class="Art4__menu-item-link" href="#">
+                            <img src="imagenes/tarj_4.jpg" alt="pic3">
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </article>
     </main>
     <footer>
 
     </footer>
+    <script>
+            window.addEventListener("resize", (event) => {
+                document.getElementById("resolucion").innerHTML=window.innerWidth + ' x ' + window.innerHeight;
+            });
+    </script>
 </body>
 </html>

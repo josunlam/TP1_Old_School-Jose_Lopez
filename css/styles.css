@@ -4,16 +4,23 @@
 }
 
 .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     min-height:56px;
     background-color: black;
-    padding: 8px 16px;
+    padding: 4px 2px;
     color: white;
+}
+
+.header .navbar{
+    width:80%;
 }
 
 .header .navbar .navbar__menu{
     list-style: none; /*Esto es para sacar las viñetas el <ul>*/
-    height:240px; /*Es el alto del navbar__menu*/
-    
+    height:80px; /*Es el alto del navbar__menu*/
     display: flex; /*Se utiliza casi siempre*/
     /*flex-direction: column; /*Toma como eje principal el eje (Y)*/
 
@@ -23,9 +30,9 @@
     ---------------------------------------------------------*/
 
     /*Trabaja sobre el eje (X)*/
-    /**/justify-content: center;/**/
+    /*justify-content: center;/**/
     /*justify-content: flex-end;/*Lo deja alineado a la derecha*/
-    /*justify-content: space-between; /*Alinea en el centro con espaciado de bloques*/
+    /**/justify-content: space-between; /*Alinea en el centro con espaciado de bloques*/
     /*justify-content: space-around; /*Alinea en el centro con espaciado de bloques, dejando espacio en izquierda y derecha*/
 
     /*(1)
@@ -39,7 +46,7 @@
     /*align-items: baseline; /*Los centra verticalmente tomando como base la altura del texto*/
     background-color: red;
 
-    gap:40px; /*Pone un espacio de 20px entre bloques, otra opcion sería en el hijo(menu-item) poner margin:0px 20px*/
+    gap:24px; /*Pone un espacio de 20px entre bloques, otra opcion sería en el hijo(menu-item) poner margin:0px 20px*/
     text-transform: uppercase; /*Letras en Mayuscula*/
     font-weight: 300;
     font-size:14px; /*Tamaño de fuente*/
@@ -48,9 +55,9 @@
 
 .header .navbar .navbar__menu .navbar__menu-item{
     background-color: blue;
-/*(1)*/
-    width: 300px; /*Esto sirve para poder ver lo de Wrap,ACTIVAR(1)*/
-    border:2px solid black; /*Esto es para que se vea el espacio de bordes,ACTIVAR(1)*/
+/*(1)
+    width: 300px; /*Esto sirve para poder ver lo de Wrap,ACTIVAR(1)
+    border:2px solid black; /*Esto es para que se vea el espacio de bordes,ACTIVAR(1)
 /**/
 }
 
@@ -65,6 +72,272 @@
     display: block; /*Hay que pasarlo a bloque para que entienda que lo que no es letra tambien es parte del boton*/
 }
 
+.ajustar_ancho{
+    width:100%;
+}
+
+.Art1{
+    height: 250px;
+    display: flex;
+    background-color: orange;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .Art1 .Art1__section{
+    height: 200px;
+    width: 75%;
+    display: flex;
+    background-color: brown;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.main .Art1 .Art1__section .img_1{
+    display: flex;
+    width:85%;
+    height: 65%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aqua;
+    
+}
+
+.main .Art1 .Art1__section .img_1 .img__contenido{
+    display: flex;
+    width:65%;
+    height:85%;
+    justify-content: center;
+    align-items: center;
+}
+
+.Art2{
+    min-height: 180px;
+    display: flex;
+    background-color: green;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.main .Art2 .Art2__menu{
+    list-style: none;
+    height:140px;
+    width:75%;
+    display: flex;
+    justify-content: center;
+
+    background-color: red;
+    align-items: stretch;
+    gap:22px;
+    text-transform: uppercase;
+}
+
+.main .Art2 .Art2__menu .Art2__menu-item{
+    background-color: rgb(65, 65, 209);
+    width: 180px;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+/*(1)
+    width: 300px; /*Esto sirve para poder ver lo de Wrap,ACTIVAR(1)
+    border:2px solid black; /*Esto es para que se vea el espacio de bordes,ACTIVAR(1)
+/**/
+}
+
+.main .Art2 .Art2__menu .Art2__menu-item .Art2__menu-item-link{
+    color: white;  /*Color de la letra*/
+    text-decoration: none; /*Esto saca el subrayado*/
+    padding: 5px;
+    display: block; /*Hay que pasarlo a bloque para que entienda que lo que no es letra tambien es parte del boton*/
+}
+
+.Art3{
+    height: auto;
+    background-color: blue;
+    padding: 1px 16px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.main .Art3 .Art3__section{
+    height: 500px;
+    width: 75%;
+    display: flex;
+    background-color: rgb(165, 132, 42);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.main .Art3 .Art3__section .Art3__menu{
+    list-style: none;
+    height:500px;
+    width:53%;
+    display: flex;
+    
+    justify-content: space-around;
+
+    background-color: rgb(136, 255, 0);
+    align-items: center;
+    gap:1px;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+}
+
+.main .Art3 .Art3__section .Art3__menu .Art3__menu-item{
+    background-color: rgb(65, 65, 209);
+    height:25%;
+    display: flex;
+    
+    justify-content: center;
+
+    align-items: center;
+    
+    padding:5px 5px;
+    width: 100px; /*Esto sirve para poder ver lo de Wrap,ACTIVAR*/
+    border:2px solid black; /*Esto es para que se vea el espacio de bordes,ACTIVAR*/
+}
+
+.main .Art3 .Art3__section .Art3__menu .Art3__menu-item .Art3__menu-item-link{
+    color: white;  /*Color de la letra*/
+    text-decoration: none; /*Esto saca el subrayado*/
+    padding: 5px;
+    display: block; /*Hay que pasarlo a bloque para que entienda que lo que no es letra tambien es parte del boton*/
+}
+
+.Art4{
+    height: 100px;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .Art4 .Art4__section{
+    width:65%;
+    display: flex;
+    background-color: rgb(52, 165, 42);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.main .Art4 .Art4__section .Art4__menu{
+    list-style: none;
+    height:50px;
+    width:60%;
+    background-color: rgb(255, 60, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.main .Art4 .Art4__section .Art4__menu .Art4__menu-item{
+    /* background-color: rgb(65, 65, 209); */
+    height:80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 25px; /*Esto sirve para poder ver lo de Wrap,ACTIVAR*/
+    /*border:2px solid black; Esto es para que se vea el espacio de bordes,ACTIVAR */
+}
+
+.main .Art4 .Art4__section .Art4__menu .Art4__menu-item .Art4__menu-item-link{
+    color: white;  /*Color de la letra*/
+    text-decoration: none; /*Esto saca el subrayado*/
+    padding: 5px;
+    display: block; /*Hay que pasarlo a bloque para que entienda que lo que no es letra tambien es parte del boton*/
+}
+
+/* .header .body{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+} */
+
+@media all and (min-width: 650px) and (max-width: 1200px){
+    /* body{
+        height:100%;
+    } */
+}
+
+@media all and (min-width: 350px) and (max-width:649px){
+    /* .header .navbar .navbar__menu{
+        gap:12px;
+        height:45%;
+        width:100%;
+    }
+
+    .header .navbar .navbar__menu .navbar__menu-item{
+        width:35%;
+        font-weight: 150;
+        font-size:7px; 
+        letter-spacing: 2; 
+    } */
+
+    .Art3{
+        height: auto;
+    }
+
+    .main .Art3 .Art3__section{
+        height: 1300px;
+    }
+
+    .main .Art3 .Art3__section .Art3__menu{
+        height: 1300px;
+    }
+
+    .main .Art3 .Art3__section .Art3__menu .Art3__menu-item {
+        max-height: 15%;
+    } 
+}
+
+@media all and (min-width: 340px) and (max-width:349px){
+    .main .Art3 .Art3__section .Art3__menu .Art3__menu-item {
+        max-height: 15%;
+    }
+
+    .Art3{
+        height: auto;
+    }
+
+    .main .Art3 .Art3__section{
+        height: 1200px;
+    }
+
+    .main .Art3 .Art3__section .Art3__menu{
+        height: 1200px;
+    }
+}
+
+/* @media all and (min-width: 50px) and (max-width:149px){
+    .header{
+        min-height:50%;
+        padding: 4px 8px;
+        
+    }
+    .header .navbar .navbar__menu{
+        gap:1px;
+        height:25%;
+    }
+
+    .header .navbar .navbar__menu .navbar__menu-item{
+        margin:0px 30px;
+    }
+} */
 
 /**
 .header .navbar .navbar__menu .navbar__menu-item.item1{

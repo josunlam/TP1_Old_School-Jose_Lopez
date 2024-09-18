@@ -216,13 +216,16 @@
     height: 100px;
     background-color: brown;
     display: flex;
+    
     justify-content: center;
     align-items: center;
 }
 
 .main .Art4 .Art4__section{
     width:65%;
+    height: 100px;
     display: flex;
+    flex-direction: column;
     background-color: rgb(52, 165, 42);
 
     justify-content: center;
